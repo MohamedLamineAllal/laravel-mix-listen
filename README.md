@@ -1,8 +1,5 @@
 # Laravel mix listen extension
 
-**npmjs:** https://www.npmjs.com/package/laravel-mix-listen<br>
-**laravel mix extension:** [coming soon]
-
 A laravel mix extension that allow us to listen to Mix internal events. The one used by the dispatcher. Like `configReady`, `configReadyForUser`, `loading-plugins`, ...
 
 ```js
@@ -10,6 +7,11 @@ mix.listen(('configReadyForUser', (config, circularStringify) => {
   fs.writeFileSync('webpackConfig.output.js', circularStringify(config));
 });
 ```
+
+## Links
+
+**npmjs:** https://www.npmjs.com/package/laravel-mix-listen<br>
+**laravel mix extension:** [coming soon]
 
 ## Installation:
 
