@@ -75,7 +75,8 @@ type Hanlder = (...args: any[], circularStringify: (obj: Record<string, any>) =>
 
 Every events have its specific args.
 
-You can check all the events through the `laravel-mix` code source. Tip: `CTRL + F > .listen(`. u'll find them.
+You can check all the events through the `laravel-mix` code source.<br>
+Tip: `CTRL + F > .listen(`. u'll find them.
 
 ### Events
 
