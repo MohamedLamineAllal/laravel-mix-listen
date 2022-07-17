@@ -84,18 +84,16 @@ Note: this section may get outdated.
 
 You can always refer to laravel-mix code source or any of the extensions that u are using. And u are interested in one of the events.
 
----
-
-## | event | description |
-
-| `'internal:gather-dependencies'` | get executed at the start of the process of gathering the dependencies. Which will trigger the process of reading the dependencies of the components and gathering them. |
-| `'init'` | Execute after mix is ready after is set and dependencies installed. It allow all components that listened to it to boot() and applyBabelConfig and to register to the events that would come next in the config generation process |
-| `'loading-entries'` | that would trigger the entries creation process. And all components with webpackEntry() will have there function to run and manage the entry |
-| `'loading-rules'` | event that trigger the rules generation process. Both default and the components one (webpackEntry())|
-|`'loading-plugins'`| event that trigger plugins config generation and both default and components one (webpackPlugins())|
-| `'configReady'` | config ready after running all components and processes. And allow plugins (components) to override the config through webpackConfig() |
-| `'configReadyForUser'` | Allowing the user to override the config. Through .override() `Overide` component. Last event to run part of the main config generation process |
-| `'build'` | run when webpack finish running the build process|
+| Event                            | Description                                                                                                                                                                                                                        |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `'internal:gather-dependencies'` | get executed at the start of the process of gathering the dependencies. Which will trigger the process of reading the dependencies of the components and gathering them.                                                           |
+| `'init'`                         | Execute after mix is ready after is set and dependencies installed. It allow all components that listened to it to boot() and applyBabelConfig and to register to the events that would come next in the config generation process |
+| `'loading-entries'`              | that would trigger the entries creation process. And all components with webpackEntry() will have there function to run and manage the entry                                                                                       |
+| `'loading-rules'`                | event that trigger the rules generation process. Both default and the components one (webpackEntry())                                                                                                                              |
+| `'loading-plugins'`              | event that trigger plugins config generation and both default and components one (webpackPlugins())                                                                                                                                |
+| `'configReady'`                  | config ready after running all components and processes. And allow plugins (components) to override the config through webpackConfig()                                                                                             |
+| `'configReadyForUser'`           | Allowing the user to override the config. Through .override() `Overide` component. Last event to run part of the main config generation process                                                                                    |
+| `'build'`                        | run when webpack finish running the build process                                                                                                                                                                                  |
 
 All config are run for config generation except for `'build'` that run at the end of the build process which come after the config generation process.
 
