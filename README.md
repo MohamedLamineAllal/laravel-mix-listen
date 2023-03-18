@@ -10,8 +10,8 @@ mix.listen(('configReadyForUser', (config, circularStringify) => {
 
 ## Links
 
-**npmjs:** https://www.npmjs.com/package/laravel-mix-listen<br>
-**laravel mix extension:** [coming soon]
+**npmjs:** https://www.npmjs.com/package/laravel-mix-listen   
+**laravel mix extension:** https://laravel-mix.com/extensions/listen
 
 ## Installation:
 
